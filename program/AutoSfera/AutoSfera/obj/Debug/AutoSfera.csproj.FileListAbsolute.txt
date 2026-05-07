@@ -1,0 +1,9 @@
+C:\Projects\AutoSfera\AutoSfera\bin\Debug\AutoSfera.exe.config
+C:\Projects\AutoSfera\AutoSfera\bin\Debug\AutoSfera.exe
+C:\Projects\AutoSfera\AutoSfera\bin\Debug\AutoSfera.pdb
+C:\Projects\AutoSfera\AutoSfera\obj\Debug\AutoSfera.csproj.AssemblyReference.cache
+C:\Projects\AutoSfera\AutoSfera\obj\Debug\AutoSfera.Properties.Resources.resources
+C:\Projects\AutoSfera\AutoSfera\obj\Debug\AutoSfera.csproj.GenerateResource.cache
+C:\Projects\AutoSfera\AutoSfera\obj\Debug\AutoSfera.csproj.CoreCompileInputs.cache
+C:\Projects\AutoSfera\AutoSfera\obj\Debug\AutoSfera.exe
+C:\Projects\AutoSfera\AutoSfera\obj\Debug\AutoSfera.pdb
