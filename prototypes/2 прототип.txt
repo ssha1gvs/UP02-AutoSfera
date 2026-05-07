@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АвтоСфера — Регистрация</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .register-container {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            width: 460px;
+            padding: 44px 40px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        .logo-icon {
+            width: 56px;
+            height: 56px;
+            background: #0f3460;
+            border-radius: 14px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+        .logo-icon span {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .logo h1 {
+            font-size: 22px;
+            color: #1a1a2e;
+            font-weight: 700;
+        }
+        .logo p {
+            font-size: 13px;
+            color: #888;
+            margin-top: 4px;
+        }
+        .form-row {
+            display: flex;
+            gap: 12px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+            flex: 1;
+        }
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 11px 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: border 0.3s;
+            outline: none;
+            font-family: inherit;
+        }
+        .form-group input:focus, .form-group select:focus {
+            border-color: #0f3460;
+        }
+        .btn-register {
+            width: 100%;
+            padding: 13px;
+            background: #0f3460;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 6px;
+        }
+        .btn-register:hover {
+            background: #1a4a8a;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #888;
+        }
+        .login-link a {
+            color: #0f3460;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="logo">
+            <div class="logo-icon"><span>А</span></div>
+            <h1>АвтоСфера</h1>
+            <p>Регистрация нового пользователя</p>
+        </div>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="lastname">Фамилия</label>
+                    <input type="text" id="lastname" placeholder="Иванов">
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Имя</label>
+                    <input type="text" id="firstname" placeholder="Иван">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="middlename">Отчество</label>
+                <input type="text" id="middlename" placeholder="Иванович">
+	    </div>
+            <div class="form-group">
+                <label for="reglogin">Логин</label>
+                <input type="text" id="reglogin" placeholder="Придумайте логин">
+            </div>
+            <div class="form-group">
+                <label for="regpassword">Пароль</label>
+                <input type="password" id="regpassword" placeholder="Придумайте пароль">
+            </div>
+            <div class="form-group">
+                <label for="role">Роль в системе</label>
+                <select id="role">
+                    <option value="">Выберите роль</option>
+                    <option value="manager">Менеджер по продажам</option>
+                    <option value="admin">Администратор</option>
+                </select>
+            </div>
+            <button type="button" class="btn-register" onclick="alert('Заявка на регистрацию отправлена администратору!')">Зарегистрироваться</button>
+        </form>
+        <div class="login-link">
+            Уже есть учётная запись? <a href="login.html">Войти</a>
+        </div>
+    </div>
+</body>
+</html>

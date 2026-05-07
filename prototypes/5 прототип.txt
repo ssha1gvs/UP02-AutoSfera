@@ -1,0 +1,130 @@
+r-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .car-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+        .car-card-image {
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+        }
+        .car-card-info { padding: 18px; }
+        .car-card-info h3 { font-size: 17px; margin-bottom: 6px; color: #0f172a; font-weight: 600; }
+        .car-card-info .price { font-size: 22px; font-weight: 700; color: #1e293b; margin-bottom: 10px; }
+        .car-card-info .details { font-size: 12px; color: #64748b; margin-bottom: 14px; line-height: 1.4; }
+        .btn-testdrive {
+            width: 100%;
+            padding: 11px;
+            background: #3b82f6;
+            color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 13px;
+            transition: background 0.2s;
+        }
+        .btn-testdrive:hover { background: #2563eb; }
+        .btn-favorite {
+            width: 100%;
+            padding: 10px;
+            background: #f8fafc;
+            color: #475569;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 12px;
+            margin-top: 8px;
+            transition: background 0.2s;
+        }
+        .btn-favorite:hover { background: #f1f5f9; }
+    </style>
+</head>
+<body>
+    <!-- Левое меню покупателя -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <h2>АвтоСфера</h2>
+            <p>Личный кабинет клиента</p>
+        </div>
+        <div class="sidebar-menu">
+            <a href="client-catalog.html" class="active">Каталог авто</a>
+            <a href="client-bookings.html">Мои заявки</a>
+            <a href="client-catalog.html">Избранное</a>
+            <a href="client-catalog.html">История просмотров</a>
+        </div>
+        <div class="sidebar-user">
+            <div class="avatar">С</div>
+            <div class="user-info">
+                <p>Смирнов Константин</p>
+                <span>Покупатель</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="main-content">
+        <div class="top-bar">
+            <h1>Доступные автомобили</h1>
+            <button class="btn-logout" onclick="alert('Выход из системы')">Выйти</button>
+        </div>
+
+        <!-- Фильтры -->
+        <div class="filter-bar">
+            <input type="text" placeholder="Марка или модель">
+            <select>
+                <option>Все марки</option><option>BMW</option><option>Toyota</option><option>Kia</option>
+            </select>
+            <input type="number" placeholder="Цена от" style="width:110px;">
+            <input type="number" placeholder="Цена до" style="width:110px;">
+            <select>
+                <option>Год выпуска</option><option>2025</option><option>2024</option>
+            </select>
+            <button class="btn-search">Показать</button>
+        </div>
+
+        <!-- Карточки автомобилей -->
+        <div class="cars-grid">
+            <!-- BMW X5 -->
+            <div class="car-card">
+                <div class="car-card-image" style="background-image: url('https://avatars.mds.yandex.net/get-autoru-vos/2101505/51805647bee95078e3a848bd6656f216/1200x900');"></div>
+                <div class="car-card-info">
+                    <h3>BMW X5 xDrive30d</h3>
+                    <div class="price">7 850 000 ₽</div>
+                    <div class="details">2025 год • 15 000 км • Дизель • Автомат • Полный привод</div>
+                    <button class="btn-testdrive" onclick="alert('Заявка на тест-драйв BMW X5 отправлена!')">Записаться на тест-драйв</button>
+<button class="btn-favorite" onclick="alert('BMW X5 добавлен в избранное')">В избранное</button>
+                </div>
+            </div>
+
+            <!-- Toyota Camry -->
+            <div class="car-card">
+                <div class="car-card-image" style="background-image: url('https://avatars.mds.yandex.net/get-autoru-vos/3926749/7d786b664813a64d79952b55cc6b9bb8/1200x900');"></div>
+                <div class="car-card-info">
+                    <h3>Toyota Camry 2.5</h3>
+                    <div class="price">3 420 000 ₽</div>
+                    <div class="details">2024 год • 42 000 км • Бензин • Автомат • Передний привод</div>
+                    <button class="btn-testdrive" onclick="alert('Заявка на тест-драйв Toyota Camry отправлена!')">Записаться на тест-драйв</button>
+                    <button class="btn-favorite" onclick="alert('Toyota Camry добавлена в избранное')">В избранное</button>
+                </div>
+            </div>
+
+            <!-- Kia Sportage -->
+            <div class="car-card">
+                <div class="car-card-image" style="background-image: url('https://avatars.mds.yandex.net/get-autoru-vos/2175019/c0fc0fea562a268b934584f17e34f9d8/1200x900');"></div>
+                <div class="car-card-info">
+                    <h3>Kia Sportage 2.0</h3>
+                    <div class="price">2 890 000 ₽</div>
+                    <div class="details">2025 год • 8 500 км • Бензин • Автомат • Передний привод</div>
+                    <button class="btn-testdrive" onclick="alert('Заявка на тест-драйв Kia Sportage отправлена!')">Записаться на тест-драйв</button>
+                    <button class="btn-favorite" onclick="alert('Kia Sportage добавлен в избранное')">В избранное</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
